@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e8118228-8f8c-4c25-be64-6d9b0c5c3f70}</ProjectGuid>
+    <RootNamespace>RetroFe</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\ThirdParty\sqlite3-3.48.0\sqlite3_86x;.\ThirdParty\dirent-1.24\include</IncludePath>
+    <LibraryPath>.\ThirdParty\sqlite3-3.48.0\sqlite3_86x</LibraryPath>
+    <TargetName>$(ProjectName)debug</TargetName>
+    <OutDir>.\RetroFE\core\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\ThirdParty\dirent-1.24\include;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sqlite3-3.43.2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sdl2-gfx_x64-windows\include\SDL2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\packages\rapidxml.1.13\build\native\include\rapidxml;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\libxml2_x64-windows\include\libxml2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\libiconv_x64-windows\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sqlite3-3.43.2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sdl2-gfx_x64-windows\lib;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\packages\rapidxml.1.13\build\native\include\rapidxml;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\libxml2_x64-windows\lib;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\libiconv_x64-windows\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)debug</TargetName>
+    <OutDir>.\RetroFE\corex64\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>.\ThirdParty\sqlite3-3.48.0\sqlite3_86x;.\ThirdParty\dirent-1.24\include</IncludePath>
+    <LibraryPath>.\ThirdParty\sqlite3-3.48.0\sqlite3_86x</LibraryPath>
+    <OutDir>.\RetroFE\core\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>.\ThirdParty\dirent-1.24\include;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sqlite3-3.43.2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sdl2-gfx_x64-windows\include\SDL2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\packages\rapidxml.1.13\build\native\include\rapidxml;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\libxml2_x64-windows\include\libxml2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\libiconv_x64-windows\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sqlite3-3.43.2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sdl2-gfx_x64-windows\lib;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\packages\rapidxml.1.13\build\native\include\rapidxml;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\libxml2_x64-windows\lib;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\libiconv_x64-windows\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>.\RetroFE\corex64\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2main.lib;SDL2.lib;zdll.lib;sqlite3.lib;%(AdditionalDependencies);kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;libvlc.lib;libvlccore.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;MSVCRT.DLL;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\packages\sdl2.nuget.2.28.4\build\native\lib\Win32;..\packages\sdl2_image.nuget.2.6.3\build\native\lib\Win32;..\packages\sdl2_mixer.nuget.2.6.3\build\native\lib\Win32;..\packages\sdl2_ttf.nuget.2.20.2\build\native\lib\Win32;..\packages\VideoLAN.LibVLC.Windows.3.0.20\build\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CopyFileToFolders>
+      <DestinationFolders>$(OutDir)</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;libvlc.lib;libvlccore.lib;zlib.lib;sqlite3.lib;SDL2_gfx.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\packages\sdl2.nuget.2.32.4\build\native\lib\x64;..\packages\sdl2_image.nuget.2.8.8\build\native\lib\x64;..\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;..\packages\sdl2_ttf.nuget.2.22.0\build\native\lib\x64;..\packages\zlib-msvc-x64.1.2.11.8900\build\native\lib_release;F:\Disco_C\repos\RetroFe64LibVLC\RetroFe64_VS\ThirdParty\sqlite3-3.43.2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sdl2-gfx_x64-windows\lib;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\packages\rapidxml.1.13\build\native\include\rapidxml;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\packages\tinyxml.2.8.2.3\build\native\lib\v141\x64-mt-static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CopyFileToFolders>
+      <DestinationFolders>$(OutDir)</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2main.lib;SDL2.lib;zdll.lib;sqlite3.lib;gstapp-1.0.lib;gstbase-1.0.lib;gobject-2.0.lib;glib-2.0.lib;gstreamer-1.0.lib;gstpbutils-1.0.lib;gstriff-1.0.lib;gstvideo-1.0.lib;gstaudio-1.0.lib;%(AdditionalDependencies);kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;MSVCRT.DLL;</IgnoreSpecificDefaultLibraries>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalLibraryDirectories>..\packages\sdl2.nuget.2.28.2\build\native\lib\Win32;..\packages\sdl2_image.nuget.2.6.3\build\native\lib\Win32;..\packages\sdl2_mixer.nuget.2.6.3\build\native\lib\Win32;..\packages\sdl2_ttf.nuget.2.20.2\build\native\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;libvlc.lib;libvlccore.lib;zlib.lib;sqlite3.lib;SDL2_gfx.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalLibraryDirectories>..\packages\sdl2.nuget.2.32.4\build\native\lib\x64;..\packages\sdl2_image.nuget.2.8.8\build\native\lib\x64;..\packages\sdl2_mixer.nuget.2.8.0\build\native\lib\x64;..\packages\sdl2_ttf.nuget.2.22.0\build\native\lib\x64;..\packages\zlib-msvc-x64.1.2.11.8900\build\native\lib_release;F:\Disco_C\repos\RetroFe64LibVLC\RetroFe64_VS\ThirdParty\sqlite3-3.43.2;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\RetroFe\ThirdParty\sdl2-gfx_x64-windows\lib;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\packages\rapidxml.1.13\build\native\include\rapidxml;C:\Users\Vieira\source\repos\RFSVIEIRA\RetroFe_VS\packages\tinyxml.2.8.2.3\build\native\lib\v141\x64-mt-static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Collection\CollectionInfo.cpp" />
+    <ClCompile Include="Source\Collection\CollectionInfoBuilder.cpp" />
+    <ClCompile Include="Source\Collection\Item.cpp" />
+    <ClCompile Include="Source\Collection\MenuParser.cpp" />
+    <ClCompile Include="Source\Control\JoyAxisHandler.cpp" />
+    <ClCompile Include="Source\Control\JoyButtonHandler.cpp" />
+    <ClCompile Include="Source\Control\JoyHatHandler.cpp" />
+    <ClCompile Include="Source\Control\KeyboardHandler.cpp" />
+    <ClCompile Include="Source\Control\MouseButtonHandler.cpp" />
+    <ClCompile Include="Source\Control\UserInput.cpp" />
+    <ClCompile Include="Source\Database\Configuration.cpp" />
+    <ClCompile Include="Source\Database\DB.cpp" />
+    <ClCompile Include="Source\Database\MetadataDatabase.cpp" />
+    <ClCompile Include="Source\Execute\AttractMode.cpp" />
+    <ClCompile Include="Source\Execute\Launcher.cpp" />
+    <ClCompile Include="Source\Graphics\Animate\Animation.cpp" />
+    <ClCompile Include="Source\Graphics\Animate\AnimationEvents.cpp" />
+    <ClCompile Include="Source\Graphics\Animate\Tween.cpp" />
+    <ClCompile Include="Source\Graphics\Animate\TweenSet.cpp" />
+    <ClCompile Include="Source\Graphics\ComponentItemBinding.cpp" />
+    <ClCompile Include="Source\Graphics\ComponentItemBindingBuilder.cpp" />
+    <ClCompile Include="Source\Graphics\Component\AnimatedImage.cpp" />
+    <ClCompile Include="Source\Graphics\Component\AnimatedImageBuilder.cpp" />
+    <ClCompile Include="Source\Graphics\Component\Component.cpp" />
+    <ClCompile Include="Source\Graphics\Component\Container.cpp" />
+    <ClCompile Include="Source\Graphics\Component\Image.cpp" />
+    <ClCompile Include="Source\Graphics\Component\ImageBuilder.cpp" />
+    <ClCompile Include="Source\Graphics\Component\ReloadableMedia.cpp" />
+    <ClCompile Include="Source\Graphics\Component\ReloadableScrollingText.cpp" />
+    <ClCompile Include="Source\Graphics\Component\ReloadableText.cpp" />
+    <ClCompile Include="Source\Graphics\Component\ScrollingList.cpp" />
+    <ClCompile Include="Source\Graphics\Component\Text.cpp" />
+    <ClCompile Include="Source\Graphics\Component\Video.cpp" />
+    <ClCompile Include="Source\Graphics\Component\VideoBuilder.cpp" />
+    <ClCompile Include="Source\Graphics\Component\VideoComponent.cpp" />
+    <ClCompile Include="Source\Graphics\Font.cpp" />
+    <ClCompile Include="Source\Graphics\FontCache.cpp" />
+    <ClCompile Include="Source\Graphics\Page.cpp" />
+    <ClCompile Include="Source\Graphics\PageBuilder.cpp" />
+    <ClCompile Include="Source\Graphics\ViewInfo.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Menu\Menu.cpp" />
+    <ClCompile Include="Source\OptMenu\ActionsMenu.cpp" />
+    <ClCompile Include="Source\OptMenu\ControlsMenu.cpp" />
+    <ClCompile Include="Source\OptMenu\InputMapper.cpp" />
+    <ClCompile Include="Source\OptMenu\LayoutMenu.cpp" />
+    <ClCompile Include="Source\OptMenu\OptionsMenu.cpp" />
+    <ClCompile Include="Source\OptMenu\OptionsMenuBuilder.cpp" />
+    <ClCompile Include="Source\OptMenu\SettingsMenu.cpp" />
+    <ClCompile Include="Source\RetroFE.cpp" />
+    <ClCompile Include="Source\SDL.cpp" />
+    <ClCompile Include="Source\Sound\Sound.cpp" />
+    <ClCompile Include="Source\Utility\Log.cpp" />
+    <ClCompile Include="Source\Utility\Utils.cpp" />
+    <ClCompile Include="Source\Version.cpp" />
+    <ClCompile Include="Source\Video\LibVLCVideo.cpp" />
+    <ClCompile Include="Source\Video\VideoFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\Collection\CollectionInfo.h" />
+    <ClInclude Include="Source\Collection\CollectionInfoBuilder.h" />
+    <ClInclude Include="Source\Collection\Item.h" />
+    <ClInclude Include="Source\Collection\MenuParser.h" />
+    <ClInclude Include="Source\Control\InputHandler.h" />
+    <ClInclude Include="Source\Control\JoyAxisHandler.h" />
+    <ClInclude Include="Source\Control\JoyButtonHandler.h" />
+    <ClInclude Include="Source\Control\JoyHatHandler.h" />
+    <ClInclude Include="Source\Control\KeyboardHandler.h" />
+    <ClInclude Include="Source\Control\MouseButtonHandler.h" />
+    <ClInclude Include="Source\Control\UserInput.h" />
+    <ClInclude Include="Source\Database\Configuration.h" />
+    <ClInclude Include="Source\Database\DB.h" />
+    <ClInclude Include="Source\Database\Metadata.h" />
+    <ClInclude Include="Source\Database\MetadataDatabase.h" />
+    <ClInclude Include="Source\Execute\AttractMode.h" />
+    <ClInclude Include="Source\Execute\Launcher.h" />
+    <ClInclude Include="Source\Graphics\Animate\Animation.h" />
+    <ClInclude Include="Source\Graphics\Animate\AnimationEvents.h" />
+    <ClInclude Include="Source\Graphics\Animate\Tween.h" />
+    <ClInclude Include="Source\Graphics\Animate\TweenSet.h" />
+    <ClInclude Include="Source\Graphics\Animate\TweenTypes.h" />
+    <ClInclude Include="Source\Graphics\ComponentItemBinding.h" />
+    <ClInclude Include="Source\Graphics\ComponentItemBindingBuilder.h" />
+    <ClInclude Include="Source\Graphics\Component\AnimatedImage.h" />
+    <ClInclude Include="Source\Graphics\Component\AnimatedImageBuilder.h" />
+    <ClInclude Include="Source\Graphics\Component\Color.h" />
+    <ClInclude Include="Source\Graphics\Component\Component.h" />
+    <ClInclude Include="Source\Graphics\Component\Container.h" />
+    <ClInclude Include="Source\Graphics\Component\Image.h" />
+    <ClInclude Include="Source\Graphics\Component\ImageBuilder.h" />
+    <ClInclude Include="Source\Graphics\Component\ReloadableMedia.h" />
+    <ClInclude Include="Source\Graphics\Component\ReloadableScrollingText.h" />
+    <ClInclude Include="Source\Graphics\Component\ReloadableText.h" />
+    <ClInclude Include="Source\Graphics\Component\ScrollingList.h" />
+    <ClInclude Include="Source\Graphics\Component\Text.h" />
+    <ClInclude Include="Source\Graphics\Component\Video.h" />
+    <ClInclude Include="Source\Graphics\Component\VideoBuilder.h" />
+    <ClInclude Include="Source\Graphics\Component\VideoComponent.h" />
+    <ClInclude Include="Source\Graphics\Font.h" />
+    <ClInclude Include="Source\Graphics\FontCache.h" />
+    <ClInclude Include="Source\Graphics\Page.h" />
+    <ClInclude Include="Source\Graphics\PageBuilder.h" />
+    <ClInclude Include="Source\Graphics\ViewInfo.h" />
+    <ClInclude Include="Source\Menu\Menu.h" />
+    <ClInclude Include="Source\OptMenu\ActionsMenu.h" />
+    <ClInclude Include="Source\OptMenu\ControlsMenu.h" />
+    <ClInclude Include="Source\OptMenu\InputMapper.h" />
+    <ClInclude Include="Source\OptMenu\LayoutMenu.h" />
+    <ClInclude Include="Source\OptMenu\MenuSection.h" />
+    <ClInclude Include="Source\OptMenu\OptionsMenu.h" />
+    <ClInclude Include="Source\OptMenu\OptionsMenuBuilder.h" />
+    <ClInclude Include="Source\OptMenu\SettingsMenu.h" />
+    <ClInclude Include="Source\RetroFE.h" />
+    <ClInclude Include="Source\SDL.h" />
+    <ClInclude Include="Source\Sound\Sound.h" />
+    <ClInclude Include="Source\Utility\Log.h" />
+    <ClInclude Include="Source\Utility\Utils.h" />
+    <ClInclude Include="Source\Version.h" />
+    <ClInclude Include="Source\Video\IVideo.h" />
+    <ClInclude Include="Source\Video\LibVLCVideo.h" />
+    <ClInclude Include="Source\Video\VideoFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RetroFe.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\rapidxml.1.13\build\native\rapidxml.targets" Condition="Exists('..\packages\rapidxml.1.13\build\native\rapidxml.targets')" />
+    <Import Project="..\packages\zlib-msvc-x64.1.2.11.8900\build\native\zlib-msvc-x64.targets" Condition="Exists('..\packages\zlib-msvc-x64.1.2.11.8900\build\native\zlib-msvc-x64.targets')" />
+    <Import Project="..\packages\zlib-msvc-x86.1.2.11.8900\build\native\zlib-msvc-x86.targets" Condition="Exists('..\packages\zlib-msvc-x86.1.2.11.8900\build\native\zlib-msvc-x86.targets')" />
+    <Import Project="..\packages\VideoLAN.LibVLC.Windows.3.0.21\build\VideoLAN.LibVLC.Windows.targets" Condition="Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.21\build\VideoLAN.LibVLC.Windows.targets')" />
+    <Import Project="..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets" Condition="Exists('..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets" Condition="Exists('..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets')" />
+    <Import Project="..\packages\sdl2_ttf.nuget.redist.2.22.0\build\native\sdl2_ttf.nuget.redist.targets" Condition="Exists('..\packages\sdl2_ttf.nuget.redist.2.22.0\build\native\sdl2_ttf.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2_ttf.nuget.2.22.0\build\native\sdl2_ttf.nuget.targets" Condition="Exists('..\packages\sdl2_ttf.nuget.2.22.0\build\native\sdl2_ttf.nuget.targets')" />
+    <Import Project="..\packages\sdl2_image.nuget.redist.2.8.8\build\native\sdl2_image.nuget.redist.targets" Condition="Exists('..\packages\sdl2_image.nuget.redist.2.8.8\build\native\sdl2_image.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2_image.nuget.2.8.8\build\native\sdl2_image.nuget.targets" Condition="Exists('..\packages\sdl2_image.nuget.2.8.8\build\native\sdl2_image.nuget.targets')" />
+    <Import Project="..\packages\sdl2.nuget.redist.2.32.4\build\native\sdl2.nuget.redist.targets" Condition="Exists('..\packages\sdl2.nuget.redist.2.32.4\build\native\sdl2.nuget.redist.targets')" />
+    <Import Project="..\packages\sdl2.nuget.2.32.4\build\native\sdl2.nuget.targets" Condition="Exists('..\packages\sdl2.nuget.2.32.4\build\native\sdl2.nuget.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\rapidxml.1.13\build\native\rapidxml.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\rapidxml.1.13\build\native\rapidxml.targets'))" />
+    <Error Condition="!Exists('..\packages\zlib-msvc-x64.1.2.11.8900\build\native\zlib-msvc-x64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\zlib-msvc-x64.1.2.11.8900\build\native\zlib-msvc-x64.targets'))" />
+    <Error Condition="!Exists('..\packages\zlib-msvc-x86.1.2.11.8900\build\native\zlib-msvc-x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\zlib-msvc-x86.1.2.11.8900\build\native\zlib-msvc-x86.targets'))" />
+    <Error Condition="!Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.21\build\VideoLAN.LibVLC.Windows.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\VideoLAN.LibVLC.Windows.3.0.21\build\VideoLAN.LibVLC.Windows.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_mixer.nuget.redist.2.8.0\build\native\sdl2_mixer.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_mixer.nuget.2.8.0\build\native\sdl2_mixer.nuget.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_ttf.nuget.redist.2.22.0\build\native\sdl2_ttf.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_ttf.nuget.redist.2.22.0\build\native\sdl2_ttf.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_ttf.nuget.2.22.0\build\native\sdl2_ttf.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_ttf.nuget.2.22.0\build\native\sdl2_ttf.nuget.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_image.nuget.redist.2.8.8\build\native\sdl2_image.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_image.nuget.redist.2.8.8\build\native\sdl2_image.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2_image.nuget.2.8.8\build\native\sdl2_image.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2_image.nuget.2.8.8\build\native\sdl2_image.nuget.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2.nuget.redist.2.32.4\build\native\sdl2.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2.nuget.redist.2.32.4\build\native\sdl2.nuget.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sdl2.nuget.2.32.4\build\native\sdl2.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sdl2.nuget.2.32.4\build\native\sdl2.nuget.targets'))" />
+  </Target>
+</Project>

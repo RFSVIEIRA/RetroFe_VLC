@@ -1,0 +1,38 @@
+/* This file is part of RetroFE.
+ *
+ * RetroFE is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * RetroFE is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with RetroFE.  If not, see <http://www.gnu.org/licenses/>.
+ */
+#pragma once
+
+#include "Font.h"
+#include <SDL.h>
+#include <string>
+#include <map>
+
+class FontCache {
+public:
+    FontCache();
+    virtual ~FontCache();
+    void initialize();
+    void deInitialize();
+   /* bool loadFont(std::string font, int fontSize, SDL_Color color, SDL_Renderer* renderer = nullptr, int monitor = 0);
+    Font* getFont(std::string font, int fontSize, SDL_Color color, SDL_Renderer* renderer = nullptr, int monitor = 0);*/
+    bool loadFont(std::string font, int fontSize, SDL_Color color, int monitor);
+    Font* getFont(std::string font, int fontSize, SDL_Color color);
+
+private:
+    std::string buildFontKey(std::string font, int fontSize, SDL_Color color);
+    std::map<std::string, Font*> fontFaceMap_;
+    SDL_Renderer* defaultRenderer_;
+};
